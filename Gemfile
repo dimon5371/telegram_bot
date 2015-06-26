@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in telegram_bot.gemspec
 require 'telegram_bot'
 
-bot = TelegramBot.new('[87368010:AAHj0e0fyoeE0OaI6bGoBiOaMdkPaI1xOf4]')
+bot = TelegramBot.new('[AAHj0e0fyoeE0OaI6bGoBiOaMdkPaI1xOf4]')
 bot.get_updates do |message|
   puts "@#{message.from.username}: #{message.text}"
   command = message.get_command_for(bot)
